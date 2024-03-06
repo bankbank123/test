@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #FFF7D4;
+    --secondary-color: #FFD95A;
+    --color-search: #caab46;
+    --third-color: #C07F00;
+    --four-color: #4C3D3D;
+}
+
+.topic-card-container {
+    width: 100%;
+    max-width: 1300px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+
+}
+
+.topic-header-container {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+}
+
+.topic-card-header {
+    height: 55px;
+    background-color: var(--third-color);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 3em;
+}
+
+.topic-card-body {
+    height: 290px;
+    background-color: var(--secondary-color);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.card-cover {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 275px;
+    height: 100%;
+    animation: FadeIn 1s ease-in-out forwards;
+}
+
+.animate-fadeChange {
+    animation: FadeOut 1s ease-in backwards; 
+}
+
+
+
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        scale: 50%;
+    }
+
+}
+
+@keyframes FadeIn {
+    0% {
+        scale: 50%;
+        opacity: 0;
+    }
+
+    100% {
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+p {
+    font-size: 1.15em;
+    margin: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.Arrow-left {
+    rotate: 180deg;
+    
+}
+
+.Arrow {
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.Arrow:hover {
+    background-color: #808080;
+}
+
+@media (max-width: 1440px) and (min-width: 1390px) {
+    .card-cover {
+        max-width: 285px;
+    }
+}

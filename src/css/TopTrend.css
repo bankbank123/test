@@ -1,0 +1,659 @@
+:root {
+    --primary-color: #FFF7D4;
+    --secondary-color: #FFD95A;
+    --color-search: #caab46;
+    --third-color: #C07F00;
+    --four-color: #4C3D3D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-trend-container {
+    max-width: 1300px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    position: relative;
+}
+
+.top-trend-logo {
+    max-width: 150px;
+    max-height: 130px;
+    position: absolute;
+    left: 92.5%;
+    top: -20%;
+}
+
+.top-trend-header {
+    display: flex;
+    align-items: center;
+    background-color: var(--third-color);
+    padding: 5px;
+    width: auto;
+    height: 38px;
+    font-size: 32px;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 600;
+    color: #FFF7D4;
+}
+
+.top-trend-content {
+    background-color: var(--secondary-color);
+    font-size: 20px;
+    padding: 20px 50px;
+    width: auto;
+    height: 200px;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+
+
+.arrow {
+    width: 50px;
+    height: 50px;
+}
+
+.arrow:hover {
+    background-color: #737373b0;
+
+}
+
+.arrow-left {
+    position: absolute;
+    rotate: 180deg;
+    top: 45.5%;
+    left: -0.05%;
+    cursor: pointer;
+}
+
+.arrow-right {
+    position: absolute;
+    rotate: 360deg;
+    top: 45.5%;
+    right: -0.05%;
+    cursor: pointer;
+}
+
+.resume-container {
+    position: absolute;
+    cursor: pointer;
+    left: 39%;
+    top: 90%;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.resume-container.stop {
+    display: block;
+}
+
+.resume-container.resume {
+    display: none;
+}
+
+.selector-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.selector-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 92.5%;
+}
+
+.selector-li {
+    width: 35px;
+    height: 8px;
+    display: flex;
+    background-color: #b8b8b8;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selector-li.active {
+    background-color: #686868;
+    color: #fff;
+}
+
+.selector-li:hover {
+    background-color: #686868;
+}
+
+@media (max-width: 320px) {
+    .resume-container {
+        left: 18%;
+        top: 92.5%;
+    }
+
+    .top-trend-container {
+        margin: 10px 10px 10px 10px;
+        min-width: 250px;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 28px;
+    }
+
+    .top-trend-content {
+        padding: 10px 20px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .arrow-left {
+        position: absolute;
+        rotate: 180deg;
+        top: 50%;
+        left: -0.25%;
+    }
+
+    .arrow-right {
+        position: absolute;
+        rotate: 360deg;
+        top: 50%;
+        right: -0.25%;
+    }
+
+}
+
+@media (max-width: 375px) and (min-width: 320px) {
+
+    .resume-container {
+        left: 20%;
+        top: 92.5%;
+    }
+
+    .top-trend-container {
+        margin: 30px 30px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .top-trend-logo {
+        width: 85px;
+        height: 60px;
+        max-width: 110px;
+        max-height: 75px;
+        position: absolute;
+        left: 78.5%;
+        top: -10%;
+    }
+
+    .arrow {
+        width: 32.5px;
+        height: 32.5px;
+    }
+
+    .arrow-left {
+        position: absolute;
+        rotate: 180deg;
+        top: 50%;
+        left: -0.25%;
+    }
+
+    .arrow-right {
+        position: absolute;
+        rotate: 360deg;
+        top: 50%;
+        right: -0.25%;
+    }
+
+    .selector-ul {
+        top: 94%;
+    }
+
+    .selector-li {
+        margin: 2.5px;
+        width: 20px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 425px) and (min-width: 375px) {
+    .top-trend-container {
+        margin: 30px 30px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 28px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .top-trend-logo {
+        max-width: 110px;
+        max-height: 80px;
+        position: absolute;
+        left: 74.25%;
+        top: -12.5%;
+    }
+
+    .arrow {
+        width: 35px;
+        height: 35px;
+    }
+
+    .arrow-left {
+        position: absolute;
+        rotate: 180deg;
+        top: 50%;
+        left: -0.25%;
+    }
+
+    .arrow-right {
+        position: absolute;
+        rotate: 360deg;
+        top: 50%;
+        right: -0.25%;
+    }
+
+    .selector-ul {
+        top: 94%;
+    }
+
+    .selector-li {
+        margin: 3px;
+        width: 25px;
+        height: 5px;
+    }
+
+    .resume-container {
+        left: 21.5%;
+        top: 92.5%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+    .arrow {
+        width: 37.5px;
+        height: 37.5px;
+    }
+
+    .arrow-left {
+        position: absolute;
+        rotate: 180deg;
+        top: 50%;
+        left: -0.25%;
+    }
+
+    .arrow-right {
+        position: absolute;
+        rotate: 360deg;
+        top: 50%;
+        right: -0.25%;
+    }
+
+}
+
+@media (max-width: 500px) and (min-width: 425px) {
+    .top-trend-container {
+        margin: 32.5px 32.5px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 28px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .top-trend-logo {
+        max-width: 105px;
+        max-height: 80px;
+        position: absolute;
+        left: 79.5%;
+        top: -12.5%;
+    }
+
+    .selector-ul {
+        top: 93.5%;
+    }
+
+    .selector-li {
+        margin: 3.5px;
+        width: 27.5px;
+        height: 5px;
+    }
+
+    .resume-container {
+        left: 22.5%;
+        top: 92.5%;
+    }
+}
+
+@media (max-width: 550px) and (min-width: 500px) {
+    .top-trend-container {
+        margin: 32.5px 32.5px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 28px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .top-trend-logo {
+        max-width: 110px;
+        max-height: 80px;
+        position: absolute;
+        left: 81.5%;
+        top: -12.5%;
+    }
+
+    .selector-ul {
+        top: 93.5%;
+    }
+
+    .selector-li {
+        margin: 3.75px;
+        width: 28.5px;
+        height: 5px;
+    }
+
+    .resume-container {
+        left: 25.5%;
+        top: 92.5%;
+    }
+
+}
+
+@media (max-width: 600px) and (min-width: 550px) {
+    .top-trend-container {
+        margin: 32.5px 32.5px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 28px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .top-trend-logo {
+        max-width: 110px;
+        max-height: 80px;
+        position: absolute;
+        left: 83.5%;
+        top: -12.5%;
+    }
+
+    .selector-ul {
+        top: 93.5%;
+    }
+
+    .selector-li {
+        margin: 4px;
+        width: 29.5px;
+        height: 5px;
+    }
+
+    .resume-container {
+        left: 27.5%;
+        top: 92.5%;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 600px) {
+    .top-trend-container {
+        margin: 35px 35px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 28px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .top-trend-logo {
+        max-width: 110px;
+        max-height: 80px;
+        position: absolute;
+        left: 85.5%;
+        top: -12.5%;
+    }
+
+    .selector-ul {
+        top: 93.5%;
+    }
+
+    .selector-li {
+        margin: 4.25px;
+        width: 30.5px;
+        height: 5px;
+    }
+
+    .resume-container {
+        left: 29.5%;
+        top: 92.5%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 650px) {
+    .top-trend-container {
+        margin: 40px 40px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 30px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 18px;
+    }
+
+    .top-trend-logo {
+        max-width: 110px;
+        max-height: 80px;
+        position: absolute;
+        left: 87.5%;
+        top: -12.5%;
+    }
+
+    .selector-ul {
+        top: 93.5%;
+    }
+
+    .selector-li {
+        margin: 4.5px;
+        width: 31.5px;
+        height: 5px;
+    }
+
+    .resume-container {
+        left: 29.5%;
+        top: 91.75%;
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .top-trend-container {
+        margin: 50px 50px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 30px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 18px;
+    }
+
+    .top-trend-logo {
+        max-width: 115px;
+        max-height: 90px;
+        position: absolute;
+        left: 89.5%;
+        top: -15%;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrow-left {
+        position: absolute;
+        rotate: 180deg;
+        top: 50%;
+        left: -0.1%;
+    }
+
+    .arrow-right {
+        position: absolute;
+        rotate: 360deg;
+        top: 50%;
+        right: -0.1%;
+    }
+
+    .selector-ul {
+        top: 93.5%;
+    }
+
+    .selector-li {
+        margin: 4.75px;
+        width: 32px;
+        height: 5px;
+    }
+
+    .resume-container {
+        left: 31.5%;
+        top: 92%;
+    }
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+
+    .top-trend-container {
+        margin: 55px 55px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 30px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 18px;
+    }
+
+    .top-trend-logo {
+        max-width: 120px;
+        max-height: 90px;
+        position: absolute;
+        left: 92.5%;
+        top: -15%;
+    }
+
+    .arrow {
+        width: 45px;
+        height: 45px;
+    }
+
+    .arrow-left {
+        position: absolute;
+        rotate: 180deg;
+        top: 50%;
+        left: -0.05%;
+    }
+
+    .arrow-right {
+        position: absolute;
+        rotate: 360deg;
+        top: 50%;
+        right: -0.05%;
+    }
+
+    .resume-container {
+        left: 36.5%;
+        top: 91.5%;
+    }
+}
+
+/* @media (max-width: 1440px) {
+    .top-trend-container {
+        margin: 55px 55px auto;
+        max-height: 300px;
+    }
+
+    .top-trend-header {
+        font-size: 30px;
+    }
+
+    .top-trend-content {
+        padding: 10px 35px;
+        overflow: hidden;
+        font-size: 18px;
+    }
+
+    .top-trend-logo {
+        max-width: 120px;
+        max-height: 100px;
+        position: absolute;
+        left: 93.5%;
+        top: -14.5%;
+    }
+} */

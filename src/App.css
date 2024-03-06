@@ -1,0 +1,5 @@
+body {
+    background-color: #FFF7D4;
+    /* Hide vertical scrollbar */
+    overflow-x: hidden;
+}
