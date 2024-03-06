@@ -14,7 +14,7 @@ export default function TopTrend() {
     ]
 
     const textData = [
-        '',
+        'น้ำพั้นช์',
         'น้ำพั้นช์',
         'Lorem ipsum dolor sit amet 3',
         'Lorem ipsum dolor sit amet 4',
